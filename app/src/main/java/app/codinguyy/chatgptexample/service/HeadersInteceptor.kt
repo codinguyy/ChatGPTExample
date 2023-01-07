@@ -9,7 +9,7 @@ class HeadersInterceptor : Interceptor {
 
         request = request.newBuilder()
             .header("Content-Type", "application/json")
-            .header("Authorization", "Bearer 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")
+            .header("Authorization", "Bearer <YOUR-KEY>")
             .build()
 
         return chain.proceed(request)
